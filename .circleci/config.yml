@@ -27,7 +27,7 @@ jobs:
           command: sudo chmod +x ./CxConsolePlugin-8.90.0/runCxConsole.sh
       - run:
           name: CxSAST Scan
-          command: ./CxConsolePlugin-8.90.0/runCxConsole.sh –v -CxServer https://appsecdemo.checkmarx.net/ -CxUser charlie.rice@checkmarx.com -CxPassword Cxadmin@1 -ProjectName "CxServer\CircleCI_WebGoat8_2" -reportXML ScanResults.xml -LocationType path  -LocationPath ../CircleCI_WebGoat8_2_scan
+          command: ./CxConsolePlugin-8.90.0/runCxConsole.sh scan –v -CxServer https://appsecdemo.checkmarx.net/ -CxUser charlie.rice@checkmarx.com -CxPassword Cxadmin@1 -ProjectName "CxServer\CircleCI_WebGoat8_2" -reportXML ScanResults.xml -LocationType path  -LocationPath ../CircleCI_WebGoat8_2_scan
 
       # Download and cache dependencies
       - restore_cache:
