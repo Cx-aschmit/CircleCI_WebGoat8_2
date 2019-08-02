@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: CxSAST Scan
-          command: ./CxConsolePlugin-8.90.0/runCxConsole.cmd scan –v -CxServer http://localhost/ -CxUser admin@cx -CxPassword Security1! -ProjectName "CxServer\CircleCI_WebGoat8_2" -reportXML ScanResults.xml -LocationType path  -LocationPath ../CircleCI_WebGoat8_2_scan
+          command: ./CxConsolePlugin-8.90.0/runCxConsole.cmd sh –v -CxServer http://localhost/ -CxUser admin@cx -CxPassword Security1! -ProjectName "CxServer\CircleCI_WebGoat8_2" -reportXML ScanResults.xml -LocationType path  -LocationPath ../CircleCI_WebGoat8_2_scan
 
       # Download and cache dependencies
       - restore_cache:
