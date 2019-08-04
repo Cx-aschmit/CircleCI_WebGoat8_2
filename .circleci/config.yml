@@ -39,7 +39,7 @@ jobs:
           command: sudo git clone https://github.com/Cx-aschmit/CircleCI_WebGoat8_2.git
       - run:
           name: list directory
-          command: cd /home/circleci/repo/scan1 | ls
+          command: cd /home/circleci/repo | ls
       - run:
           name: CxSAST Scan
           #command: ./CxConsolePlugin-8.80.2/runCxConsole.sh Scan –v -projectName "CxServer\CircleCI_WebGoat8_2" -CxServer "https://appsecdemo.checkmarx.net" -CxUser "charlie.rice@checkmarx.com" -CxPassword "Cxadmin@1" -Locationtype "GIT" -LocationURL "https://github.com/Cx-aschmit/CircleCI_WebGoat8_2.git" -Preset "Checkmarx Default"
