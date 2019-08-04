@@ -22,21 +22,21 @@ jobs:
 
     steps:
       - checkout
-      #- run:
-       #   name: Make Executable
-       #   command: sudo chmod +x ./CxConsolePlugin-8.80.2/runCxConsole.sh
-     # - run:
-       #   name: GIT
-       #   command: sudo apt-get install git
-     # - run:
-       #   name: make directory
-       #   command: sudo mkdir /home/circleci/repo/scan1
-     # - run:
-       #   name: Move to Directory
-       #   command: cd /home/circleci/repo/scan1
-     # - run:
-       #   name: GIT clone
-       #   command: sudo git clone https://github.com/Cx-aschmit/CircleCI_WebGoat8_2.git
+      - run:
+          name: Make Executable
+          command: sudo chmod +x ./CxConsolePlugin-8.80.2/runCxConsole.sh
+      - run:
+          name: GIT
+          command: sudo apt-get install git
+      - run:
+          name: make directory
+          command: sudo mkdir /home/circleci/repo/scan1
+      - run:
+          name: Move to Directory
+          command: cd /home/circleci/repo/scan1
+      - run:
+          name: GIT clone
+          command: sudo git clone https://github.com/Cx-aschmit/CircleCI_WebGoat8_2.git
       - run:
           name: list directory
           command: cd /home/ | ls
