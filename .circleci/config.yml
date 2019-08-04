@@ -25,16 +25,16 @@ jobs:
       #- run:
        #   name: Make Executable
        #   command: sudo chmod +x ./CxConsolePlugin-8.80.2/runCxConsole.sh
-      - run:
+     # - run:
        #   name: GIT
        #   command: sudo apt-get install git
-      - run:
+     # - run:
        #   name: make directory
        #   command: sudo mkdir /home/circleci/repo/scan1
-      - run:
+     # - run:
        #   name: Move to Directory
        #   command: cd /home/circleci/repo/scan1
-      - run:
+     # - run:
        #   name: GIT clone
        #   command: sudo git clone https://github.com/Cx-aschmit/CircleCI_WebGoat8_2.git
       - run:
